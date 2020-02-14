@@ -1,0 +1,135 @@
+* {
+  -webkit-transition: .4s;
+  transition: .4s;
+  text-rendering: geometricPrecision;
+  shape-rendering: geometricPrecision;
+  image-rendering: auto;
+}
+
+*:focus {
+  outline: none;
+}
+
+*:active {
+  outline: none;
+}
+
+html, body {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  font-weight: black;
+}
+
+.bar1, .bar2, .bar3 {
+  background: white;
+  width: 25px;
+  margin: 4px;
+  display: block;
+  height: 2px;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-41deg) translateY(8px);
+          transform: rotate(-41deg) translateY(8px);
+}
+
+.change .bar2 {
+  opacity: 0;
+  -webkit-transform: translateX(350px);
+          transform: translateX(350px);
+  background: hotpink;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(41deg) translateY(-8px);
+          transform: rotate(41deg) translateY(-8px);
+}
+
+.collapse-nav {
+  left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .collapse-nav {
+    position: absolute;
+    left: -100%;
+    opacity: 0;
+  }
+}
+
+.append-nav {
+  left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .append-nav {
+    position: absolute;
+    display: block;
+    left: 10%;
+    margin-top: 4.40rem;
+    opacity: 1;
+    z-index: 0;
+    border-radius: 0 0 5% 5%;
+  }
+}
+
+.show-plank {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .show-plank {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.hide-plank {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .hide-plank {
+    top: -100%;
+    opacity: 0;
+  }
+}
+
+.hamburger {
+  z-index: 20;
+  position: absolute;
+}
+
+.plank {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .plank {
+    background: rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    z-index: 0;
+  }
+}
+
+.fa-whatsapp {
+  color: #38CF5F;
+}
+
+.fa-facebook {
+  color: #4b7be2;
+}
+
+.fa-twitter {
+  color: #00aced;
+}
+
+.fa-instagram {
+  color: #dd2a7b;
+}
